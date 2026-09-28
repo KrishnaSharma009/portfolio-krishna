@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>Aarav — About</title>
+  <meta name="description" content="About Aarav — animation student and visual storyteller. Skills, tools, creative process and education." />
+  <meta property="og:title" content="Aarav — About" />
+  <meta property="og:description" content="Animation student and visual storyteller — skills, process and education." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/profile.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="Aarav — home">
+        <strong>[ARTIST NAME]</strong>
+        <span>Animation • 3D • Motion</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn--primary nav__cta">Let's Talk</a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Mobile">
+      <a href="index.html"><span class="idx">01</span> Home</a>
+      <a href="about.html" aria-current="page"><span class="idx">02</span> About</a>
+      <a href="projects.html"><span class="idx">03</span> Projects</a>
+      <a href="contact.html"><span class="idx">04</span> Contact</a>
+      <a href="contact.html" class="btn btn--primary">Let's Talk</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero" aria-label="About introduction">
+      <div class="container">
+        <span class="label">About Me</span>
+        <h1 class="section-title">I create animated worlds, characters & visual stories.</h1>
+        <p class="lead">Animation student • 3D & motion artist — endlessly curious about movement, emotion and the frames in between.</p>
+      </div>
+    </section>
+
+    <!-- ================= BIO + PORTRAIT ================= -->
+    <section class="section" aria-label="Biography">
+      <div class="container about-grid">
+        <!-- ✏️ REPLACE: your portrait (assets/images/profile.jpg — square works best) -->
+        <figure class="about__photo reveal">
+          <img src="assets/images/profile.svg" alt="Portrait placeholder — replace with your profile photo" loading="lazy" width="800" height="800" />
+        </figure>
+
+        <div class="about__bio reveal reveal--d1">
+          <!-- ✏️ REPLACE: your bio text -->
+          <p>
+            I am an animation student passionate about visual storytelling, character
+            animation and creating expressive digital worlds.
+          </p>
+          <p>
+            My work moves between 2D and 3D — from hand-drawn loops and storyboards to
+            modeled, lit and rendered scenes. I love the moment a static drawing first
+            starts to breathe, and I'm learning everything I can about how timing,
+            spacing and small details bring emotion to the screen.
+          </p>
+          <p>
+            Right now I'm focused on sharpening my craft through academic projects,
+            personal experiments and collaborations with fellow students. Placeholder
+            text — replace this paragraph with your own story.
+          </p>
+
+          <!-- Skills as tags (no fake percentage bars) -->
+          <div class="about__block">
+            <span class="label">Skills</span>
+            <ul class="tags" role="list" style="margin-top: 18px">
+              <li>2D Animation</li>
+              <li>3D Animation</li>
+              <li>Motion Graphics</li>
+              <li>Character Design</li>
+              <li>Storyboarding</li>
+              <li>Visual Development</li>
+              <li>Video Editing</li>
+              <li>Illustration</li>
+            </ul>
+          </div>
+
+          <!-- Interests -->
+          <div class="about__block">
+            <span class="label">Interests</span>
+            <ul class="facts" role="list" style="margin-top: 18px">
+              <li>Character performance</li>
+              <li>Cinematic lighting</li>
+              <li>Visual storytelling</li>
+              <li>Experimental motion</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOFTWARE / TOOLS ================= -->
+    <section class="section section--alt" aria-label="Software and tools">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="label">Toolbox</span>
+            <h2 class="section-title">Software & Tools</h2>
+          </div>
+          <p>The software I use daily for animation, design and editing.</p>
+        </div>
+
+        <!-- ✏️ EDIT: swap in the tools you actually use -->
+        <div class="tools-grid">
+          <article class="tool reveal"><strong>Blender</strong><span>3D · Modeling · Render</span></article>
+          <article class="tool reveal reveal--d1"><strong>After Effects</strong><span>Motion · Compositing</span></article>
+          <article class="tool reveal reveal--d2"><strong>Photoshop</strong><span>Illustration · Design</span></article>
+          <article class="tool reveal reveal--d3"><strong>Premiere Pro</strong><span>Editing · Sound</span></article>
+          <article class="tool reveal reveal--d4"><strong>Illustrator</strong><span>Vector · Graphics</span></article>
+          <article class="tool reveal reveal--d5"><strong>Storyboarder</strong><span>Boards · Animatics</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CREATIVE PROCESS ================= -->
+    <section class="section" aria-label="Creative process">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="label">My Process</span>
+            <h2 class="section-title">How An Idea Becomes A Film</h2>
+          </div>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span class="num" aria-hidden="true">01</span>
+            <h3>Idea</h3>
+            <p>Notebook sketches, references and the first "what if…" that starts every project.</p>
+          </article>
+          <article class="process-step reveal reveal--d1">
+            <span class="num" aria-hidden="true">02</span>
+            <h3>Research</h3>
+            <p>Moodboards, visual research and style frames that define the world and its rules.</p>
+          </article>
+          <article class="process-step reveal reveal--d2">
+            <span class="num" aria-hidden="true">03</span>
+            <h3>Storyboard</h3>
+            <p>Boards and animatics — pacing the story and testing every shot before production.</p>
+          </article>
+          <article class="process-step reveal reveal--d3">
+            <span class="num" aria-hidden="true">04</span>
+            <h3>Animate</h3>
+            <p>Blocking to polish: keys, in-betweens, lighting and cameras that give the story life.</p>
+          </article>
+          <article class="process-step reveal reveal--d4">
+            <span class="num" aria-hidden="true">05</span>
+            <h3>Final Frame</h3>
+            <p>Render, composite, sound and grade — the last 10% that makes it feel finished.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section section--alt" aria-label="Education">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="label">Education</span>
+            <h2 class="section-title">Studies</h2>
+          </div>
+          <p>Placeholder entries — replace with your real institute, degree and years.</p>
+        </div>
+
+        <!-- ✏️ EDIT: your education. Do NOT keep invented details. -->
+        <div class="edu-list">
+          <article class="edu-item reveal">
+            <span class="year">2024 — Present</span>
+            <div>
+              <h3>Bachelor / Diploma in Animation <span aria-hidden="true">·</span> [Institute Name]</h3>
+              <p>Undergraduate studies in animation, filmmaking and digital art. [Specialisation placeholder]</p>
+            </div>
+            <span class="place">[City, Country]</span>
+          </article>
+
+          <article class="edu-item reveal reveal--d1">
+            <span class="year">2023 — 2024</span>
+            <div>
+              <h3>Foundation Year in Art & Design <span aria-hidden="true">·</span> [Institute Name]</h3>
+              <p>Drawing, color theory, design fundamentals and first animation exercises. [Placeholder]</p>
+            </div>
+            <span class="place">[City, Country]</span>
+          </article>
+
+          <article class="edu-item reveal reveal--d2">
+            <span class="year">2023</span>
+            <div>
+              <h3>Online Courses & Self-Study</h3>
+              <p>Tutorials, workshops and personal practice in Blender and After Effects. [Placeholder]</p>
+            </div>
+            <span class="place">Self-taught</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta" aria-label="Call to action">
+      <div class="container reveal">
+        <h2>Let's make<br /><em>something move.</em></h2>
+        <p>Collaborations, student films or just talking animation — my inbox is open.</p>
+        <a href="contact.html" class="btn btn--primary">Get In Touch <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>[ARTIST NAME]</strong>
+          <span>Animation • Motion • Visual Storytelling</span>
+          <p>Student animator crafting characters, movement and worlds — one frame at a time.</p>
+        </div>
+
+        <nav aria-label="Footer">
+          <h4>Menu</h4>
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+
+        <!-- ✏️ REPLACE: your real profile URLs -->
+        <div>
+          <h4>Social</h4>
+          <div class="footer-social">
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://behance.net/yourhandle" target="_blank" rel="noopener">Behance</a>
+            <a href="https://artstation.com/yourhandle" target="_blank" rel="noopener">ArtStation</a>
+            <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Say Hello</h4>
+          <div class="footer-nav">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aarav. All rights reserved.</p>
+        <button type="button" class="to-top">Back to top <span class="arrow" aria-hidden="true">↑</span></button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

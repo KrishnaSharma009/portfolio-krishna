@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>Aarav — Contact</title>
+  <meta name="description" content="Get in touch with Aarav — animation student open to creative projects, collaborations and student films." />
+  <meta property="og:title" content="Aarav — Contact" />
+  <meta property="og:description" content="Let's create something together — animation, motion and visual storytelling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero-art.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="Aarav — home">
+        <strong>[ARTIST NAME]</strong>
+        <span>Animation • 3D • Motion</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn--primary nav__cta">Let's Talk</a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Mobile">
+      <a href="index.html"><span class="idx">01</span> Home</a>
+      <a href="about.html"><span class="idx">02</span> About</a>
+      <a href="projects.html"><span class="idx">03</span> Projects</a>
+      <a href="contact.html" aria-current="page"><span class="idx">04</span> Contact</a>
+      <a href="contact.html" class="btn btn--primary">Let's Talk</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero" aria-label="Contact introduction">
+      <div class="container">
+        <span class="label">Contact</span>
+        <h1 class="section-title">Let's create something together.</h1>
+        <p class="lead">Creative projects, collaborations, student films or just a chat about animation — I'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- ================= LINKS + FORM ================= -->
+    <section class="section" aria-label="Contact options and form">
+      <div class="container contact-grid">
+        <!-- Direct links -->
+        <div class="reveal">
+          <span class="label">Reach Me</span>
+
+          <!-- ✏️ REPLACE: all placeholder links/handles below with your real ones -->
+          <div class="contact-links">
+            <a href="mailto:hello@example.com">
+              <span>
+                <span class="name">Email</span><br />
+                <span class="value">hello@example.com</span>
+              </span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">
+              <span>
+                <span class="name">Instagram</span><br />
+                <span class="value">@yourhandle</span>
+              </span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">
+              <span>
+                <span class="name">LinkedIn</span><br />
+                <span class="value">/in/yourhandle</span>
+              </span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="https://behance.net/yourhandle" target="_blank" rel="noopener">
+              <span>
+                <span class="name">Behance</span><br />
+                <span class="value">/yourhandle</span>
+              </span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="https://artstation.com/yourhandle" target="_blank" rel="noopener">
+              <span>
+                <span class="name">ArtStation</span><br />
+                <span class="value">/yourhandle</span>
+              </span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!--
+          CONTACT FORM (static site — no backend)
+          Validates in the browser, shows a confirmation, then opens the
+          visitor's email app via mailto with the message pre-filled.
+          ✏️ Change TO_EMAIL inside js/script.js to your address.
+        -->
+        <form class="form reveal reveal--d1" data-contact-form novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required />
+              <p class="error-msg" role="alert">Please enter your name (min. 2 characters).</p>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              <p class="error-msg" role="alert">Please enter a valid email address.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="Project enquiry, collaboration…" required />
+            <p class="error-msg" role="alert">Please add a short subject (min. 3 characters).</p>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" placeholder="Tell me about your idea…" required></textarea>
+            <p class="error-msg" role="alert">Please write a short message (min. 10 characters).</p>
+          </div>
+
+          <p class="form__note" role="status">Thanks! Your message has been prepared.</p>
+
+          <button type="submit" class="btn btn--primary">Send Message <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="form__hint">This opens your email app with the message pre-filled — no data is stored anywhere.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>[ARTIST NAME]</strong>
+          <span>Animation • Motion • Visual Storytelling</span>
+          <p>Student animator crafting characters, movement and worlds — one frame at a time.</p>
+        </div>
+
+        <nav aria-label="Footer">
+          <h4>Menu</h4>
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+
+        <!-- ✏️ REPLACE: your real profile URLs -->
+        <div>
+          <h4>Social</h4>
+          <div class="footer-social">
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://behance.net/yourhandle" target="_blank" rel="noopener">Behance</a>
+            <a href="https://artstation.com/yourhandle" target="_blank" rel="noopener">ArtStation</a>
+            <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Say Hello</h4>
+          <div class="footer-nav">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aarav. All rights reserved.</p>
+        <button type="button" class="to-top">Back to top <span class="arrow" aria-hidden="true">↑</span></button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

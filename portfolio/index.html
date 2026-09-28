@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Krishna Sharma — 5th-semester BCA student and web developer in Haridwar. Builds client websites, web apps and tools at student-friendly prices." />
+  <meta name="theme-color" content="#05070d" />
+  <title>Krishna Sharma — Portfolio</title>
+
+  <!-- Fonts: Space Grotesk (display) + Inter (body) + JetBrains Mono (accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Favicon: purple K -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%236d28d9'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='36' font-weight='bold' text-anchor='middle' fill='%23ffffff'%3EK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Share preview (WhatsApp / LinkedIn / X) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Krishna Sharma — Web Developer" />
+  <meta property="og:description" content="5th-semester BCA student &amp; web developer building client websites, web apps and 3D art at student-friendly prices." />
+  <meta property="og:image" content="og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Krishna Sharma — Web Developer" />
+  <meta name="twitter:description" content="Websites, web apps &amp; 3D art — built by a BCA student who ships." />
+  <meta name="twitter:image" content="og-image.jpg" />
+
+  <link rel="stylesheet" href="styles.css?v=13" />
+
+  <!-- Apply saved theme before paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('ks-theme'); } catch (e) {}
+      var theme = saved || 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- Branded preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pl-box">
+      <span class="pl-mark">K</span>
+      <div class="pl-bar"><span id="plFill"></span></div>
+      <span class="pl-text">loading portfolio…</span>
+    </div>
+  </div>
+  <noscript><style>.preloader { display: none; }</style></noscript>
+
+
+
+    <!-- Scroll progress bar -->
+  <div class="progress-bar" aria-hidden="true"><span id="progressFill"></span></div>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <a href="#home" class="brand" aria-label="Krishna Sharma — home">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span class="brand-name">Krishna<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav" id="navMenu" aria-label="Main navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">What I do</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Dark / light mode toggle -->
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch between dark and light mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.4"/>
+            <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.6 14.8A8.8 8.8 0 0 1 9.2 3.4a.7.7 0 0 0-.9-.9 10.3 10.3 0 1 0 13.2 13.2.7.7 0 0 0-.9-.9Z"/>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">Let's Talk</a>
+
+        <!-- Hamburger (mobile only) -->
+        <button type="button" class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main id="main">
+
+    <!-- -------- HERO / LANDING -------- -->
+    <section id="home" class="hero">
+      <!-- Decorative background: faint grid + soft maroon tint -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-tint"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <!-- Left: intro copy (reference layout) -->
+        <div class="hero-copy">
+          <p class="hero-badge">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Open to internships &amp; collaborations
+          </p>
+
+          <h1 class="hero-title">
+            I BUILD<br />
+            EXPERIENCES<br />
+            THAT <span class="grad-text">INSPIRE</span>
+          </h1>
+
+          <p class="hero-text">
+            I'm <strong>Krishna Sharma</strong> — a 5th-semester BCA student and
+            <span class="fire-word">web developer</span>, building clean, responsive
+            <span class="fire-word">client websites</span> at student-friendly
+            prices, with the occasional game and 3D experiment on the side.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View my work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+            <a href="#contact" class="hero-link">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <dl class="hero-stats">
+            <div class="stat">
+              <dt>Projects</dt>
+              <dd><span class="count" data-count="4">4</span>+</dd>
+            </div>
+            <div class="stat">
+              <dt>Tools</dt>
+              <dd><span class="count" data-count="8">8</span>+</dd>
+            </div>
+            <div class="stat">
+              <dt>Semester</dt>
+              <dd><span class="count" data-count="5">5</span>th</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Right: glass code window typing out krishna.js -->
+        <div class="hero-visual">
+          <div class="visual-stage">
+            <div class="stage-orb" aria-hidden="true"></div>
+            <div class="stage-ring" aria-hidden="true"></div>
+
+            <div class="code-window" id="codeWindow">
+              <div class="cw-bar">
+                <span class="cw-dot d1" aria-hidden="true"></span>
+                <span class="cw-dot d2" aria-hidden="true"></span>
+                <span class="cw-dot d3" aria-hidden="true"></span>
+                <span class="cw-title">krishna.js</span>
+              </div>
+              <pre class="cw-body"><code id="codeLines"></code></pre>
+              <div class="cw-status">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <span>status: open to internships</span>
+              </div>
+            </div>
+
+            <span class="glass-badge gb1" aria-hidden="true">🌐 Web Dev</span>
+            <span class="glass-badge gb2" aria-hidden="true">💼 Client Sites</span>
+            <span class="glass-badge gb3" aria-hidden="true">⚡ JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- scroll hint -->
+      <a href="#about" class="scroll-hint" aria-label="Scroll down to About section">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- -------- ABOUT (bento grid) -------- -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-label">// about</p>
+        <h2 class="section-title">About <span class="grad-text">me</span></h2>
+
+        <div class="bento">
+          <article class="bento-card bento-bio">
+            <h3>Web developer, BCA student 🎓</h3>
+            <p>
+              I'm Krishna — a <strong>5th-semester BCA student</strong> at Dev Sanskriti
+              Vishwavidyalaya, Haridwar, and a <strong>web developer first</strong>.
+              I design and build complete websites for real clients: business
+              landing pages, personal portfolios and web apps like ResearchGuard
+              AI — all at student-friendly prices.
+            </p>
+            <p>
+              What began as curiosity about how the web works has turned into
+              shipped work. I care about clean code, responsive layouts and
+              getting the small details right — and I improve a little every
+              single day.
+            </p>
+          </article>
+
+          <article class="bento-card bento-stat">
+            <span class="stat-number"><span class="count" data-count="5">5</span><span class="stat-suffix">th</span></span>
+            <span class="stat-label">semester<br />BCA @ DSVV</span>
+          </article>
+
+          <article class="bento-card bento-stat">
+            <span class="stat-number"><span class="count" data-count="3">3</span><span class="stat-suffix">+</span></span>
+            <span class="stat-label">projects<br />built &amp; shipped</span>
+          </article>
+
+          <article class="bento-card bento-stat">
+            <span class="stat-number"><span class="count" data-count="8">8</span><span class="stat-suffix">+</span></span>
+            <span class="stat-label">tools in my<br />toolbox</span>
+          </article>
+
+          <article class="bento-card bento-now">
+            <h3>Currently learning</h3>
+            <ul class="now-list">
+              <li>Advanced JavaScript &amp; APIs</li>
+              <li>Modern CSS &amp; responsive UI</li>
+              <li>Taking client sites from idea → launch</li>
+            </ul>
+          </article>
+
+          <article class="bento-card bento-where">
+            <span class="pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.58 7-13a7 7 0 1 0-14 0c0 5.42 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </span>
+            <div>
+              <strong>Haridwar, Uttarakhand</strong>
+              <span>India · UTC +5:30</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- WHAT I DO (services) -------- -->
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <p class="section-label">// services</p>
+        <h2 class="section-title">What I <span class="grad-text grad-2">do</span></h2>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-icon si-1" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </span>
+            <h3>Web Development</h3>
+            <p>Responsive, accessible websites built from scratch — from simple pages to full sites, at student-friendly prices.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon si-2" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11.5v2M9.5 9.5v6M12 11v3M14.5 9.5v6M17 11.5v2"/></svg>
+            </span>
+            <h3>Browser Games</h3>
+            <p>Small arcade games built for fun between client work — game loops, collision and scoring in pure JS.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon si-3" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5ZM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </span>
+            <h3>3D Design</h3>
+            <p>Modelling, materials and lighting studies in Blender — turning ideas into renders and visual experiments.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-icon si-4" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7a4.95 4.95 0 1 0-7-7l-7 7v7h7Z"/><path d="m16 8 1.5 1.5"/></svg>
+            </span>
+            <h3>UI &amp; Visual Design</h3>
+            <p>Clean layouts, social creatives and quick prototypes designed in Framer and Canva with a keen eye.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- SKILLS -------- -->
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-label">// skills</p>
+        <h2 class="section-title">My <span class="grad-text">toolbox</span></h2>
+        <p class="section-intro">The tools I reach for — and how comfortable I am with each.</p>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-icon ic-c" aria-hidden="true">C</span>
+            <div class="skill-meta">
+              <div class="skill-row"><h3>C</h3><span class="skill-pct">80%</span></div>
+              <div class="skill-bar"><span style="--level: 80%"></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon ic-py" aria-hidden="true">Py</span>
+            <div class="skill-meta">
+              <div class="skill-row"><h3>Python</h3><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><span style="--level: 75%"></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon ic-html" aria-hidden="true">&lt;&gt;</span>
+            <div class="skill-meta">
+              <div class="skill-row"><h3>HTML</h3><span class="skill-pct">90%</span></div>
+              <div class="skill-bar"><span style="--level: 90%"></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon ic-css" aria-hidden="true">#</span>
+            <div class="skill-meta">
+              <div class="skill-row"><h3>CSS</h3><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><span style="--level: 85%"></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon ic-js" aria-hidden="true">JS</span>
+            <div class="skill-meta">
+              <div class="skill-row"><h3>JavaScript</h3><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><span style="--level: 85%"></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon ic-bl" aria-hidden="true">3D</span>
+            <div class="skill-meta">
+              <div class="skill-row"><h3>Blender</h3><span class="skill-pct">60%</span></div>
+              <div class="skill-bar"><span style="--level: 60%"></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon ic-fr" aria-hidden="true">F</span>
+            <div class="skill-meta">
+              <div class="skill-row"><h3>Framer</h3><span class="skill-pct">75%</span></div>
+              <div class="skill-bar"><span style="--level: 75%"></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-icon ic-cv" aria-hidden="true">Ca</span>
+            <div class="skill-meta">
+              <div class="skill-row"><h3>Canva</h3><span class="skill-pct">85%</span></div>
+              <div class="skill-bar"><span style="--level: 85%"></span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- PROJECTS -------- -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <p class="section-label">// projects</p>
+        <h2 class="section-title">Things I've <span class="grad-text grad-2">built</span></h2>
+
+        <div class="projects-grid">
+          <article class="project-card tilt">
+            <div class="project-thumb">
+              <a class="thumb-link" href="client-demo/index.html" aria-label="Open the client website demo" data-cursor="Open demo &#9654;">
+                <img src="media/client-demo.jpg" alt="Animation portfolio website built for a client" loading="lazy" decoding="async" />
+                <span class="thumb-open" aria-hidden="true">▶ Client demo</span>
+                <span class="thumb-status"><span class="st-dot" aria-hidden="true"></span>For clients</span>
+              </a>
+            </div>
+            <div class="project-body">
+              <h3>Client Websites</h3>
+              <p>
+                Custom websites built for real clients — like this animation
+                portfolio I built for a client — plus business pages,
+                e-commerce stores and more, delivered end-to-end at
+                student-friendly prices.
+              </p>
+              <ul class="tech-chips" aria-label="Technologies used">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="pl-link pl-live" href="client-demo/index.html" data-cursor="Open demo &#8599;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  View client demo
+                </a>
+                <a class="pl-link" href="#contact">
+                  Need one? Let's talk
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card tilt">
+            <div class="project-thumb">
+              <a class="thumb-link" href="https://researchguard-ai-0n7j.onrender.com/index.html" target="_blank" rel="noopener" aria-label="Open ResearchGuard AI live app" data-cursor="Open app &#8599;">
+                <img src="proj-researchguard.jpg" alt="ResearchGuard AI research paper similarity detector screenshot" loading="lazy" decoding="async" />
+                <span class="thumb-open" aria-hidden="true">Open app ↗</span>
+              </a>
+              <span class="thumb-status"><span class="st-dot" aria-hidden="true"></span>Live app</span>
+            </div>
+            <div class="project-body">
+              <h3>ResearchGuard AI</h3>
+              <p>
+                A research-paper similarity detector — paste two papers and AI
+                flags duplicate and semantically similar content. Multi-page
+                app with analysis history and dark/light themes.
+              </p>
+              <ul class="tech-chips" aria-label="Technologies used">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>AI</li>
+              </ul>
+              <div class="project-links">
+                <a class="pl-link pl-live" href="https://researchguard-ai-0n7j.onrender.com/index.html" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  Live app
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card tilt">
+            <div class="project-thumb">
+              <a class="thumb-link" href="https://cosmic-hopper-tau.vercel.app/" target="_blank" rel="noopener" aria-label="Open Cosmic Hopper live demo" data-cursor="Play &#9654;">
+                <img src="proj-cosmic.jpg" alt="Cosmic Hopper browser game screenshot" loading="lazy" decoding="async" />
+                <span class="thumb-open" aria-hidden="true">▶ Play live</span>
+              </a>
+              <span class="thumb-status st-play"><span class="st-dot" aria-hidden="true"></span>Playable</span>
+            </div>
+            <div class="project-body">
+              <h3>Cosmic Hopper</h3>
+              <p>
+                A browser-based arcade game built from scratch with vanilla
+                JavaScript. Dodge, hop and score — open source and playable
+                right in your browser.
+              </p>
+              <ul class="tech-chips" aria-label="Technologies used">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a class="pl-link pl-live" href="https://cosmic-hopper-tau.vercel.app/" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                  Live demo
+                </a>
+                <a class="pl-link" href="https://github.com/KrishnaSharma009/cosmic-hopper" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.55v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.76.4-1.27.74-1.56-2.55-.29-5.24-1.27-5.24-5.67 0-1.25.45-2.27 1.19-3.07-.12-.3-.52-1.48.11-3.08 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.6.23 2.78.11 3.08.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.37-5.26 5.66.41.36.78 1.07.78 2.16v3.2c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                  Source
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card tilt">
+            <div class="project-thumb pt-2" aria-hidden="true">
+              <span class="thumb-glyph">💻</span>
+              <span class="thumb-status st-wip"><span class="st-dot" aria-hidden="true"></span>You're here</span>
+            </div>
+            <div class="project-body">
+              <h3>Portfolio v2</h3>
+              <p>
+                The site you're on — a fully responsive single-page portfolio
+                with dark/light themes, scroll animations and a bento layout.
+                Zero frameworks, just HTML, CSS &amp; JS.
+              </p>
+              <ul class="tech-chips" aria-label="Technologies used">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <span class="pl-link pl-youarehere"><span class="pulse-dot" aria-hidden="true"></span> You're viewing it</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card tilt">
+            <div class="project-thumb">
+              <button type="button" class="thumb-link thumb-btn" data-gallery aria-label="Open the Blender works gallery">
+                <img src="media/render-perfume.jpg" alt="Perfume bottle 3D render made in Blender" loading="lazy" decoding="async" />
+                <span class="thumb-open" aria-hidden="true">▶ View 8 works</span>
+                <span class="thumb-status"><span class="st-dot" aria-hidden="true"></span>Gallery</span>
+              </button>
+            </div>
+            <div class="project-body">
+              <h3>Blender Studio</h3>
+              <p>
+                Product renders, interior scenes and hard-surface models —
+                plus looping animations with particles, fluids and physics.
+              </p>
+              <ul class="tech-chips" aria-label="Technologies used">
+                <li>Blender</li><li>3D</li><li>Rendering</li><li>Animation</li>
+              </ul>
+              <div class="project-links">
+                <button type="button" class="pl-link pl-live" data-gallery>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9.5 5 2.5-5 2.5v-5Z"/></svg>
+                  Open gallery
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- EDUCATION -------- -->
+    <section id="education" class="section">
+      <div class="container">
+        <p class="section-label">// education</p>
+        <h2 class="section-title">My <span class="grad-text">journey</span></h2>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-when">2023 — Present</p>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p class="muted">Dev Sanskriti Vishwavidyalaya, Haridwar · 5th semester</p>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-when">Senior Secondary</p>
+            <h3>Class XII — CBSE</h3>
+            <p class="muted">Gayatri Vidyapeeth, Haridwar, Uttarakhand</p>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <p class="timeline-when">Secondary</p>
+            <h3>Class X — CBSE</h3>
+            <p class="muted">St. Mark's Academy, Roorkee, Uttarakhand</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- -------- TESTIMONIALS -------- -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <p class="section-label">// testimonials</p>
+        <h2 class="section-title">Kind <span class="grad-text grad-2">words</span></h2>
+
+        <div class="testi-grid">
+          <figure class="testi-card">
+            <span class="testi-mark" aria-hidden="true">❝</span>
+            <blockquote>
+              Delivered our business website quickly, handled every change
+              request patiently, and the price was very fair.
+            </blockquote>
+            <figcaption>
+              <span class="testi-avatar" aria-hidden="true">BC</span>
+              <div>
+                <strong>Business Client</strong>
+                <span>Landing page &amp; contact site</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="testi-card">
+            <span class="testi-mark" aria-hidden="true">❝</span>
+            <blockquote>
+              One of the most dependable people in our year — he ships what
+              he learns instead of just talking about it.
+            </blockquote>
+            <figcaption>
+              <span class="testi-avatar" aria-hidden="true">DS</span>
+              <div>
+                <strong>BCA Classmate</strong>
+                <span>Dev Sanskriti Vishwavidyalaya</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="testi-card">
+            <span class="testi-mark" aria-hidden="true">❝</span>
+            <blockquote>
+              Addictive little game! Simple to pick up, hard to put down
+              — the high-score chase is real.
+            </blockquote>
+            <figcaption>
+              <span class="testi-avatar" aria-hidden="true">CH</span>
+              <div>
+                <strong>Cosmic Hopper Player</strong>
+                <span>Browser arcade fan</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------- CONTACT -------- -->
+    <section id="contact" class="section section-alt contact">
+      <div class="container">
+        <p class="section-label">// contact</p>
+
+        <div class="contact-grid">
+          <!-- Left: pitch + direct channels -->
+          <div class="contact-info">
+            <h2 class="contact-title">
+              Let's build something<br /><span class="grad-text">great together</span>
+            </h2>
+            <p class="contact-text">
+              Need a website, have an internship opportunity, or just want to
+              talk tech? Pick any channel — I usually reply within a day.
+            </p>
+
+            <ul class="contact-rows">
+              <li>
+                <a href="mailto:krishna.sharma.tech06@gmail.com?subject=Project%20enquiry%20%E2%80%94%20via%20portfolio&body=Hi%20Krishna%2C%0A%0AI%20saw%20your%20portfolio%20and%20I%27m%20interested%20in%20a%20website.%0A%0AMy%20name%3A%0AWhat%20I%20need%3A%20(landing%20page%20/%20portfolio%20/%20store%20/%20other)%0ABudget%20range%3A%0A%0AThanks!" data-cursor="Email &#9993;">
+                  <span class="cr-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7.5 9 6 9-6"/></svg>
+                  </span>
+                  <span class="cr-body">
+                    <strong>Email</strong>
+                    <span>krishna.sharma.tech06@gmail.com</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/916395742605?text=Hi%20Krishna!%20I%20found%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20website%20project." data-cursor="Chat &#128172;" target="_blank" rel="noopener">
+                  <span class="cr-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                  </span>
+                  <span class="cr-body">
+                    <strong>WhatsApp</strong>
+                    <span>+91 63957 42605</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/Krishna_Sharma_009" target="_blank" rel="noopener" data-cursor="Telegram &#9992;">
+                  <span class="cr-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.32 8.7 20.1c.5 0 .71-.21.97-.47l2.32-2.22 4.8 3.52c.88.49 1.5.23 1.74-.81L22.93 3.8c.3-1.3-.47-1.81-1.33-1.5L2.3 9.76c-1.27.49-1.25 1.2-.22 1.52l4.97 1.55 11.53-7.27c.54-.36 1.04-.16.63.2z"/></svg>
+                  </span>
+                  <span class="cr-body">
+                    <strong>Telegram</strong>
+                    <span>@Krishna_Sharma_009</span>
+                  </span>
+                </a>
+              </li>
+              <li class="cr-static">
+                <span class="cr-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.58 7-13a7 7 0 1 0-14 0c0 5.42 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                </span>
+                <span class="cr-body">
+                  <strong>Location</strong>
+                  <span>Haridwar, Uttarakhand, India</span>
+                </span>
+              </li>
+            </ul>
+
+            <div class="contact-icons" aria-label="Contact links">
+              <a href="mailto:krishna.sharma.tech06@gmail.com?subject=Project%20enquiry%20%E2%80%94%20via%20portfolio&body=Hi%20Krishna%2C%0A%0AI%20saw%20your%20portfolio%20and%20I%27m%20interested%20in%20a%20website.%0A%0AMy%20name%3A%0AWhat%20I%20need%3A%20(landing%20page%20/%20portfolio%20/%20store%20/%20other)%0ABudget%20range%3A%0A%0AThanks!" aria-label="Email Krishna Sharma" title="Email" data-cursor="Email &#9993;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7.5 9 6 9-6"/></svg>
+              </a>
+              <a href="https://github.com/KrishnaSharma009" target="_blank" rel="noopener" aria-label="GitHub profile" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.93c.58.1.79-.25.79-.55v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.76.4-1.27.74-1.56-2.55-.29-5.24-1.27-5.24-5.67 0-1.25.45-2.27 1.19-3.07-.12-.3-.52-1.48.11-3.08 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.6.23 2.78.11 3.08.74.8 1.19 1.82 1.19 3.07 0 4.41-2.7 5.37-5.26 5.66.41.36.78 1.07.78 2.16v3.2c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/krsnasharma" target="_blank" rel="noopener" aria-label="LinkedIn profile" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              </a>
+              <a href="https://t.me/Krishna_Sharma_009" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.04 15.32 8.7 20.1c.5 0 .71-.21.97-.47l2.32-2.22 4.8 3.52c.88.49 1.5.23 1.74-.81L22.93 3.8c.3-1.3-.47-1.81-1.33-1.5L2.3 9.76c-1.27.49-1.25 1.2-.22 1.52l4.97 1.55 11.53-7.27c.54-.36 1.04-.16.63.2z"/></svg>
+              </a>
+              <a href="https://wa.me/916395742605?text=Hi%20Krishna!%20I%20found%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20website%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="WhatsApp" data-cursor="Chat &#128172;">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: message form -->
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+            <div class="ff-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name" placeholder="Your name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required />
+              </label>
+            </div>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me about your project or just say hi…" required></textarea>
+            </label>
+            <input type="text" name="_gotcha" class="ff-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <button type="submit" class="btn btn-primary ff-submit" id="formSubmit" data-cursor="Send &#10148;">
+              Send message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 3 18 9-18 9 4-9-4-9ZM7 12h14"/></svg>
+            </button>
+            <p class="form-note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Krishna Sharma · Built with <span aria-hidden="true">💜</span> HTML, CSS &amp; JS</p>
+      <a href="#home" class="back-top">
+        Back to top
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Blender works gallery lightbox -->
+  <div class="media-lightbox" id="mediaLightbox" role="dialog" aria-modal="true" aria-label="Blender works gallery" hidden>
+    <div class="lb-backdrop" data-close></div>
+    <div class="lb-panel" role="document">
+      <button type="button" class="lb-close" data-close aria-label="Close gallery">✕</button>
+      <div class="lb-stage">
+        <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous work">‹</button>
+        <div class="lb-frame" id="lbFrame"></div>
+        <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next work">›</button>
+      </div>
+      <div class="lb-meta">
+        <h4 id="lbTitle"></h4>
+        <span id="lbCount"></span>
+      </div>
+      <div class="lb-grid" id="lbGrid"></div>
+    </div>
+  </div>
+
+  <!-- Floating back-to-top with scroll progress ring -->
+  <button type="button" class="to-top" id="toTop" aria-label="Back to top" data-cursor="Top &#8593;">
+    <svg class="ring" viewBox="0 0 56 56" aria-hidden="true">
+      <circle class="ring-track" cx="28" cy="28" r="24"/>
+      <circle class="ring-fill" cx="28" cy="28" r="24" id="ringFill"/>
+    </svg>
+    <svg class="ring-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <!-- Motion libraries (progressive enhancement — site works without them) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" defer></script>
+
+  <script src="script.js?v=13" defer></script>
+</body>
+</html>

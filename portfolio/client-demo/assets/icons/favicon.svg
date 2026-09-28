@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Brand mark: play triangle inside a rounded frame (cyan on black) -->
+  <rect width="64" height="64" rx="14" fill="#080A0B"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#18E6E8" stroke-opacity="0.35" stroke-width="1.5"/>
+  <path d="M25 20.5v23a2 2 0 0 0 3.05 1.7l18.4-11.5a2 2 0 0 0 0-3.4L28.05 18.8A2 2 0 0 0 25 20.5Z" fill="#18E6E8"/>
+  <circle cx="25" cy="32" r="4.4" fill="#080A0B"/>
+  <path d="M23.4 30.6v2.8l2.6-1.4-2.6-1.4Z" fill="#18E6E8"/>
+</svg>

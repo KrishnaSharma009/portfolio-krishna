@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>Aarav — Animation Portfolio</title>
+  <meta name="description" content="Portfolio of Aarav — animation student exploring 2D, 3D, motion graphics and visual storytelling." />
+  <meta property="og:title" content="Aarav — Animation Portfolio" />
+  <meta property="og:description" content="Animation student exploring 2D, 3D, motion graphics and visual storytelling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero-art.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Font: Space Grotesk (free, Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <!-- ✏️ REPLACE: your name in the logo -->
+      <a href="index.html" class="brand" aria-label="Aarav — home">
+        <strong>[ARTIST NAME]</strong>
+        <span>Animation • 3D • Motion</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn--primary nav__cta">Let's Talk</a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile full-screen menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Mobile">
+      <a href="index.html" aria-current="page"><span class="idx">01</span> Home</a>
+      <a href="about.html"><span class="idx">02</span> About</a>
+      <a href="projects.html"><span class="idx">03</span> Projects</a>
+      <a href="contact.html"><span class="idx">04</span> Contact</a>
+      <a href="contact.html" class="btn btn--primary">Let's Talk</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__blob" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--b" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div>
+          <p class="status hero__status anim-up"><span class="dot" aria-hidden="true"></span> Available for creative projects</p>
+
+          <h1 class="hero__title anim-up">
+            Animating<br />
+            <em>ideas</em> into<br />
+            <span class="accent">motion.</span>
+          </h1>
+
+          <p class="hero__desc anim-up">
+            Animation student exploring 2D, 3D, motion graphics and visual storytelling —
+            bringing characters, ideas and worlds to life.
+          </p>
+
+          <div class="hero__actions anim-up">
+            <a href="projects.html" class="btn btn--primary">View My Work <span class="arrow" aria-hidden="true">→</span></a>
+            <a href="contact.html" class="btn btn--ghost">Get In Touch</a>
+          </div>
+        </div>
+
+        <!-- ✏️ HERO VISUAL — replace the image with your render/illustration,
+             or swap the <img> for:
+             <video src="assets/videos/hero-reel.mp4" poster="assets/images/hero-art.svg"
+                    muted loop playsinline preload="metadata"></video> -->
+        <figure class="hero__visual anim-up">
+          <img src="assets/images/hero-art.svg" alt="Abstract 3D artwork placeholder — replace with your animation still or render" width="1280" height="860" />
+          <figcaption class="hero__tag">Showreel — 2026</figcaption>
+        </figure>
+      </div>
+    </section>
+
+        <!-- ================= SKILLS MARQUEE =================
+         Infinite scrolling band — pure CSS animation.
+         ✏️ EDIT: change the skill words to your own. -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>2D Animation</span><span>3D Animation</span><span>Motion Graphics</span><span>Character Design</span><span>Storyboarding</span><span>Visual Development</span><span>Illustration</span><span>Short Films</span>
+        <span>2D Animation</span><span>3D Animation</span><span>Motion Graphics</span><span>Character Design</span><span>Storyboarding</span><span>Visual Development</span><span>Illustration</span><span>Short Films</span>
+      </div>
+    </div>
+
+    <!-- ================= INTRO / ABOUT PREVIEW ================= -->
+    <section class="section" aria-label="About preview">
+      <div class="container intro">
+        <div class="reveal">
+          <span class="label">Hello</span>
+          <p class="intro__statement" style="margin-top: 18px">
+            Hi, I'm <em>[Name]</em> — an animation student and visual storyteller
+            interested in bringing characters, ideas and worlds to life.
+          </p>
+          <a href="about.html" class="link-arrow intro__more">More about me <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+
+        <!-- ✏️ EDIT: your own quick stats (keep honest — these are placeholders) -->
+        <div class="intro__stats reveal reveal--d1" aria-label="Quick facts">
+          <div><strong>6+</strong><span>Projects</span></div>
+          <div><strong>3D / 2D</strong><span>Disciplines</span></div>
+          <div><strong>2026</strong><span>Graduating</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROJECTS ================= -->
+    <section class="section section--alt" id="work" aria-label="Featured projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="label">Portfolio</span>
+            <h2 class="section-title">Selected Work</h2>
+          </div>
+          <p>A few favourites — 3D and 2D animation, motion graphics and character design. Click any project for details.</p>
+        </div>
+
+        <!--
+          PROJECT CARDS
+          ✏️ Replace images in assets/images/ and update title/category/year.
+          data-project links each card to its details in js/script.js (PROJECTS).
+        -->
+        <div class="work-grid">
+          <button type="button" class="card reveal" data-project="the-lost-frame">
+            <span class="card__media">
+              <img src="assets/images/project-01.svg" alt="The Lost Frame — 3D animation placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">01</span>
+              <span class="card__cat">3D Animation</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">The Lost Frame</span>
+                <span class="card__meta">3D Animation • 2026</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">A forgotten photograph wakes up inside an abandoned archive. Short 3D animated film.</span>
+          </button>
+
+          <button type="button" class="card reveal reveal--d1" data-project="midnight">
+            <span class="card__media">
+              <img src="assets/images/project-02.svg" alt="Midnight — 2D animation placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">02</span>
+              <span class="card__cat">2D Animation</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">Midnight</span>
+                <span class="card__meta">2D Animation • 2026</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">Hand-drawn loops about a city that only wakes up after midnight.</span>
+          </button>
+
+          <button type="button" class="card reveal" data-project="motion-studies">
+            <span class="card__media">
+              <img src="assets/images/project-03.svg" alt="Motion Studies — motion graphics placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">03</span>
+              <span class="card__cat">Motion Graphics</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">Motion Studies</span>
+                <span class="card__meta">Motion Graphics • 2025</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">Typographic and shape experiments exploring rhythm, timing and easing.</span>
+          </button>
+
+          <button type="button" class="card reveal reveal--d1" data-project="character-lab">
+            <span class="card__media">
+              <img src="assets/images/project-04.svg" alt="Character Lab — character design placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">04</span>
+              <span class="card__cat">Character Design</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">Character Lab</span>
+                <span class="card__meta">Character Design • 2025</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">Silhouettes, expressions, turnarounds and small 3D sculpt tests.</span>
+          </button>
+        </div>
+
+        <div class="work-more reveal">
+          <a href="projects.html" class="btn btn--ghost">All Projects <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS / EXPERTISE ================= -->
+    <section class="section" aria-label="Skills and expertise">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="label">What I Do</span>
+            <h2 class="section-title">Skills & Expertise</h2>
+          </div>
+          <p>The areas of animation and design I enjoy exploring the most — in class and on personal projects.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="num">01</span>
+            <h3>2D Animation</h3>
+            <p>Frame-by-frame and rigged character animation, walk cycles, expressions and motion principles.</p>
+          </article>
+          <article class="skill-card reveal reveal--d1">
+            <span class="num">02</span>
+            <h3>3D Animation</h3>
+            <p>Modeling, lighting and animation in Blender — from blockouts to final rendered scenes.</p>
+          </article>
+          <article class="skill-card reveal reveal--d2">
+            <span class="num">03</span>
+            <h3>Motion Graphics</h3>
+            <p>Animated typography, logo stings, kinetic type and rhythm-driven visual sequences.</p>
+          </article>
+          <article class="skill-card reveal reveal--d3">
+            <span class="num">04</span>
+            <h3>Story & Visual Development</h3>
+            <p>Storyboards, concept art, character design and world-building for animated stories.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CREATIVE PROCESS ================= -->
+    <section class="section section--alt" aria-label="Creative process">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="label">How I Work</span>
+            <h2 class="section-title">My Process</h2>
+          </div>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step reveal">
+            <span class="num" aria-hidden="true">01</span>
+            <h3>Idea</h3>
+            <p>Every project starts with a spark — a feeling, a character or a single image worth exploring.</p>
+          </article>
+          <article class="process-step reveal reveal--d1">
+            <span class="num" aria-hidden="true">02</span>
+            <h3>Research</h3>
+            <p>Reference boards, style frames and experiments to find the look and mood of the piece.</p>
+          </article>
+          <article class="process-step reveal reveal--d2">
+            <span class="num" aria-hidden="true">03</span>
+            <h3>Storyboard</h3>
+            <p>Sketching the story beat by beat, then cutting an animatic to lock timing and pacing.</p>
+          </article>
+          <article class="process-step reveal reveal--d3">
+            <span class="num" aria-hidden="true">04</span>
+            <h3>Animate</h3>
+            <p>Blocking, refining and polishing — where characters finally start to move and breathe.</p>
+          </article>
+          <article class="process-step reveal reveal--d4">
+            <span class="num" aria-hidden="true">05</span>
+            <h3>Final Frame</h3>
+            <p>Lighting, compositing, sound and grading — everything comes together in the final render.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta" aria-label="Call to action">
+      <div class="container reveal">
+        <h2>Have an idea?<br /><em>Let's animate it.</em></h2>
+        <p>I'm always open to creative projects, collaborations and student films. Tell me what you're making.</p>
+        <a href="contact.html" class="btn btn--primary">Start a Conversation <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>[ARTIST NAME]</strong>
+          <span>Animation • Motion • Visual Storytelling</span>
+          <p>Student animator crafting characters, movement and worlds — one frame at a time.</p>
+        </div>
+
+        <nav aria-label="Footer">
+          <h4>Menu</h4>
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+
+        <!-- ✏️ REPLACE: your real profile URLs -->
+        <div>
+          <h4>Social</h4>
+          <div class="footer-social">
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://behance.net/yourhandle" target="_blank" rel="noopener">Behance</a>
+            <a href="https://artstation.com/yourhandle" target="_blank" rel="noopener">ArtStation</a>
+            <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Say Hello</h4>
+          <div class="footer-nav">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aarav. All rights reserved.</p>
+        <button type="button" class="to-top">Back to top <span class="arrow" aria-hidden="true">↑</span></button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project detail modal (content injected by js/script.js) -->
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal__backdrop"></div>
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" aria-label="Close project details">✕</button>
+      <div class="modal__body"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>Aarav — Projects</title>
+  <meta name="description" content="All projects by Aarav — 2D & 3D animation, motion graphics, character design, illustration and short films." />
+  <meta property="og:title" content="Aarav — Projects" />
+  <meta property="og:description" content="A collection of animation, motion, design and visual storytelling projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/project-01.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="Aarav — home">
+        <strong>[ARTIST NAME]</strong>
+        <span>Animation • 3D • Motion</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn--primary nav__cta">Let's Talk</a>
+
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Mobile">
+      <a href="index.html"><span class="idx">01</span> Home</a>
+      <a href="about.html"><span class="idx">02</span> About</a>
+      <a href="projects.html" aria-current="page"><span class="idx">03</span> Projects</a>
+      <a href="contact.html"><span class="idx">04</span> Contact</a>
+      <a href="contact.html" class="btn btn--primary">Let's Talk</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero" aria-label="Projects introduction">
+      <div class="container">
+        <span class="label">Archive</span>
+        <h1 class="section-title">All Work</h1>
+        <p class="lead">A collection of animation, motion, design and visual storytelling projects — academic, personal and experimental.</p>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS GRID + FILTERS ================= -->
+    <section class="section" aria-label="Project gallery">
+      <div class="container">
+        <!--
+          FILTERS
+          Each button's data-filter matches a card's data-category below.
+          Add a new pair here + a new card to add more categories.
+        -->
+        <div class="filters" role="group" aria-label="Filter projects by category">
+          <button type="button" class="is-active" data-filter="all">All</button>
+          <button type="button" data-filter="2d">2D Animation</button>
+          <button type="button" data-filter="3d">3D</button>
+          <button type="button" data-filter="motion">Motion</button>
+          <button type="button" data-filter="character">Character</button>
+          <button type="button" data-filter="illustration">Illustration</button>
+          <button type="button" data-filter="short-film">Short Film</button>
+        </div>
+
+        <!--
+          PROJECT GRID
+          ✏️ To add a project: copy a <button class="card"> block, update the
+          image, titles, data-category and data-project (which must match an
+          entry in the PROJECTS object in js/script.js).
+        -->
+        <div class="work-grid">
+          <button type="button" class="card" data-filterable data-category="3d" data-project="the-lost-frame">
+            <span class="card__media">
+              <img src="assets/images/project-01.svg" alt="The Lost Frame — 3D animation placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">01</span>
+              <span class="card__cat">3D Animation</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">The Lost Frame</span>
+                <span class="card__meta">3D Animation • 2026</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">A forgotten photograph wakes up inside an abandoned archive. Short 3D animated film.</span>
+          </button>
+
+          <button type="button" class="card" data-filterable data-category="2d" data-project="midnight">
+            <span class="card__media">
+              <img src="assets/images/project-02.svg" alt="Midnight — 2D animation placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">02</span>
+              <span class="card__cat">2D Animation</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">Midnight</span>
+                <span class="card__meta">2D Animation • 2026</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">Hand-drawn loops about a city that only wakes up after midnight.</span>
+          </button>
+
+          <button type="button" class="card" data-filterable data-category="motion" data-project="motion-studies">
+            <span class="card__media">
+              <img src="assets/images/project-03.svg" alt="Motion Studies — motion graphics placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">03</span>
+              <span class="card__cat">Motion Graphics</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">Motion Studies</span>
+                <span class="card__meta">Motion Graphics • 2025</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">Typographic and shape experiments exploring rhythm, timing and easing.</span>
+          </button>
+
+          <button type="button" class="card" data-filterable data-category="character" data-project="character-lab">
+            <span class="card__media">
+              <img src="assets/images/project-04.svg" alt="Character Lab — character design placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">04</span>
+              <span class="card__cat">Character Design</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">Character Lab</span>
+                <span class="card__meta">Character Design • 2025</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">Silhouettes, expressions, turnarounds and small 3D sculpt tests.</span>
+          </button>
+
+          <button type="button" class="card" data-filterable data-category="short-film" data-project="beyond">
+            <span class="card__media">
+              <img src="assets/images/project-05.svg" alt="Beyond — short film placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">05</span>
+              <span class="card__cat">Short Film</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">Beyond</span>
+                <span class="card__meta">Short Film • 2025</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">A one-minute short about leaving a familiar world behind.</span>
+          </button>
+
+          <button type="button" class="card" data-filterable data-category="illustration" data-project="visual-experiments">
+            <span class="card__media">
+              <img src="assets/images/project-06.svg" alt="Visual Experiments — illustration placeholder thumbnail" loading="lazy" width="1200" height="800" />
+              <span class="card__num" aria-hidden="true">06</span>
+              <span class="card__cat">Illustration</span>
+              <span class="card__overlay" aria-hidden="true"><span class="card__play">▶</span></span>
+            </span>
+            <span class="card__body">
+              <span>
+                <span class="card__title">Visual Experiments</span>
+                <span class="card__meta">Illustration • 2024</span>
+              </span>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </span>
+            <span class="card__desc">Sketches and visual development — studies of light, color and atmosphere.</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta" aria-label="Call to action">
+      <div class="container reveal">
+        <h2>Want the full<br /><em>behind the scenes?</em></h2>
+        <p>Process files, animatics and breakdowns available on request — just ask.</p>
+        <a href="contact.html" class="btn btn--primary">Get In Touch <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <strong>[ARTIST NAME]</strong>
+          <span>Animation • Motion • Visual Storytelling</span>
+          <p>Student animator crafting characters, movement and worlds — one frame at a time.</p>
+        </div>
+
+        <nav aria-label="Footer">
+          <h4>Menu</h4>
+          <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+
+        <!-- ✏️ REPLACE: your real profile URLs -->
+        <div>
+          <h4>Social</h4>
+          <div class="footer-social">
+            <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://behance.net/yourhandle" target="_blank" rel="noopener">Behance</a>
+            <a href="https://artstation.com/yourhandle" target="_blank" rel="noopener">ArtStation</a>
+            <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Say Hello</h4>
+          <div class="footer-nav">
+            <a href="mailto:hello@example.com">hello@example.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aarav. All rights reserved.</p>
+        <button type="button" class="to-top">Back to top <span class="arrow" aria-hidden="true">↑</span></button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project detail modal (content injected by js/script.js) -->
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <div class="modal__backdrop"></div>
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" aria-label="Close project details">✕</button>
+      <div class="modal__body"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Character design placeholder">
+  <defs>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer></filter><radialGradient id="vig" cx="0.5" cy="0.45" r="0.75"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.55"/></radialGradient>
+    <linearGradient id="cbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C1013"/><stop offset="1" stop-color="#080A0B"/></linearGradient>
+    <radialGradient id="cglow" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#18E6E8" stop-opacity="0.14"/><stop offset="1" stop-color="#18E6E8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#cbg)"/>
+  <rect width="1200" height="800" fill="url(#cglow)"/>
+  <g stroke="#F5F7F7" stroke-opacity="0.06"><path d="M0 640 H1200"/><path d="M0 560 H1200" stroke-dasharray="6 14"/></g>
+  <!-- three turnaround silhouettes -->
+  <g fill="#11181C" stroke="#18E6E8" stroke-opacity="0.55" stroke-width="2">
+    <g transform="translate(280 300)"><circle cx="0" cy="60" r="58"/><path d="M-6 118 C-58 118 -86 150 -92 210 L-98 340 H98 L92 210 C86 150 52 118 6 118 Z"/><path d="M-92 210 C-60 250 60 250 92 210" fill="none" opacity="0.5"/></g>
+    <g transform="translate(600 260) scale(1.15)"><circle cx="0" cy="60" r="58"/><path d="M0 118 C-52 118 -80 150 -86 210 L-92 340 H92 L86 210 C80 150 52 118 0 118 Z"/><path d="M-86 214 C-52 254 52 254 86 214" fill="none" opacity="0.5"/></g>
+    <g transform="translate(920 300)"><circle cx="0" cy="60" r="58"/><path d="M6 118 C-46 118 -74 150 -80 210 L-86 340 H110 L104 210 C98 150 58 118 6 118 Z"/><path d="M-80 212 C-48 252 60 252 104 212" fill="none" opacity="0.5"/></g>
+  </g>
+  <!-- expression ticks -->
+  <g fill="none" stroke="#18E6E8" stroke-width="3" opacity="0.8" stroke-linecap="round">
+    <path d="M252 348 q14 12 28 0"/><path d="M586 330 q14 12 28 0"/><path d="M892 348 q14 12 28 0"/>
+  </g>
+  <g fill="#18E6E8" opacity="0.7"><circle cx="258" cy="330" r="5"/><circle cx="286" cy="330" r="5"/><circle cx="592" cy="312" r="6"/><circle cx="622" cy="312" r="6"/><circle cx="898" cy="330" r="5"/><circle cx="926" cy="330" r="5"/></g>
+  <rect width="1200" height="800" filter="url(#grain)"/>
+  <rect width="1200" height="800" fill="url(#vig)"/><rect x="0.5" y="0.5" width="1199" height="799" fill="none" stroke="#FFFFFF" stroke-opacity="0.06"/>
+</svg>

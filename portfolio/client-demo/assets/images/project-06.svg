@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Illustration color study placeholder">
+  <defs>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer></filter><radialGradient id="vig" cx="0.5" cy="0.45" r="0.75"><stop offset="0.55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.55"/></radialGradient>
+    <linearGradient id="v6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B0F12"/><stop offset="1" stop-color="#080A0B"/></linearGradient>
+    <radialGradient id="o1" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#63F5F3" stop-opacity="0.85"/><stop offset="1" stop-color="#63F5F3" stop-opacity="0"/></radialGradient>
+    <radialGradient id="o2" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0AA6AA" stop-opacity="0.8"/><stop offset="1" stop-color="#0AA6AA" stop-opacity="0"/></radialGradient>
+    <radialGradient id="o3" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F5F7F7" stop-opacity="0.5"/><stop offset="1" stop-color="#F5F7F7" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#v6)"/>
+  <circle cx="420" cy="330" r="240" fill="url(#o1)"/>
+  <circle cx="760" cy="420" r="280" fill="url(#o2)"/>
+  <circle cx="590" cy="260" r="130" fill="url(#o3)"/>
+  <!-- brush strokes -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M180 620 Q 400 540 620 610 T 1040 580" stroke="#18E6E8" stroke-width="5" opacity="0.5"/>
+    <path d="M220 670 Q 480 610 760 665 T 1080 640" stroke="#F5F7F7" stroke-width="2.5" opacity="0.3"/>
+  </g>
+  <!-- color swatch strip -->
+  <g>
+    <rect x="180" y="700" width="60" height="26" rx="6" fill="#18E6E8"/><rect x="250" y="700" width="60" height="26" rx="6" fill="#0AA6AA"/>
+    <rect x="320" y="700" width="60" height="26" rx="6" fill="#0E2A2C"/><rect x="390" y="700" width="60" height="26" rx="6" fill="#1B3A3D"/>
+    <rect x="460" y="700" width="60" height="26" rx="6" fill="#F5F7F7" opacity="0.85"/><rect x="530" y="700" width="60" height="26" rx="6" fill="#A7AFB0" opacity="0.6"/>
+  </g>
+  <circle cx="880" cy="250" r="5" fill="#F5F7F7" opacity="0.6"/><circle cx="960" cy="180" r="3.5" fill="#63F5F3" opacity="0.7"/><circle cx="1080" cy="300" r="4.5" fill="#F5F7F7" opacity="0.4"/>
+  <rect width="1200" height="800" filter="url(#grain)"/>
+  <rect width="1200" height="800" fill="url(#vig)"/><rect x="0.5" y="0.5" width="1199" height="799" fill="none" stroke="#FFFFFF" stroke-opacity="0.06"/>
+</svg>
